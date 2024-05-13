@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 import pickle
 app = Flask(__name__)
-
+##https://github.com/hwchase17/chroma-langchain/blob/master/persistent-qa.ipynb
 tokenizer  = pickle.load(open("models/cv.pkl","rb"))
 model  = pickle.load(open("models/clf.pkl","rb"))
 
